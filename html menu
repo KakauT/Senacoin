@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="events.js"></script>
+    <title>Inicio</title>
+</head>
+<body>
+    <nav>
+
+        <ul id="menu">
+            <li><a href="inicio.html">Inicio</a></li>
+            <li><a href="trocas.html">Trocar Pontos</a></li>
+            <li><a href="extrato.html">Extrato</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="faleconosco.html">Fale Conosco</a></li>
+            <li><a href="config.html">Configurações</a></li>
+        </ul>
+        <div id="sino" class="dropdown">
+            <button onclick="myFunction()" class="dropbtn"><span><img src="img/sino.png" alt="sino" width= "20" height="20"></span></button>
+            <div id="myDropdown" class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+        <div id="perfil">
+            <li><a href="perfil.html">Usuário</a></li>
+            <p>2.500</p>            
+        </div>
+        <div id="imguser">
+            <img src="img/user.jpg" alt="user" width="40" height="35">
+        </div>
+    </nav>    
+</body>
+</html>
