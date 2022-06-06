@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background-color: #efefef;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+header {
+    min-height: 12%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    padding-left: 6rem;
+    padding-right: 6rem;
+}
+
+header nav {
+    width: 60%;
+}
+
+header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    font-size: 19px;
+}
+
+header nav ul li {
+    position: relative;
+    padding-bottom: 0.3rem;
+}
+
+header nav ul li::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0.1rem;
+    bottom: 0;
+    background-color: whitesmoke;
+    border-radius: 1px;
+    transform: scale(0, 1);
+    transition: transform 0.3s ease;
+}
+
+header nav ul li:hover::before {
+    transform: scale(1, 2);
+    background-color: hsl(39, 100%, 39%);
+}
+
+header ul li a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+.area-usuario {
+    width: 11.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid cornflowerblue; */
+}
+
+.inf-usuario {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid coral; */
+}
+
+.dropdown {
+    display: flex;
+    flex-direction: row;
+    float: left;
+    display: flex;
+    list-style: none;
+    padding-top: 20px;
+}
+
+.dropdown img {
+    margin: auto;
+    justify-content: center;
+}
+
+.dropbtn {
+    background-color: black;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: gray;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: azure
+}
+
+.show {
+    display: block;
+}
+
+.topnav {
+    border-bottom: 1px solid black;
+    height: 128px;
+}
+
+.topnav img {
+    float: left;
+    display: flex;
+    margin-top: 23px;
+    margin-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a,
+    .topnav input[type=text] {
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+    }
+    .topnav input[type=text] {
+        border: 1px solid #ccc;
+    }
+}
+
+.spacer {
+    height: 70%;
+}
+
+section {
+    height: 85%;
+    display: flex;
+    align-items: center;
+}
+
+.title-f {
+    font-size: 50px;
+    text-align: center;
+    text-decoration: underline 4px;
+    position: relative;
+    bottom: 200px;
+    left: 50%;
+}
+
+.faq {
+    height: 75%;
+    width: 70%;
+    min-width: 500px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 85%;
+    left: 52%;
+}
+
+.sanfonafaq {
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    border-radius: 5px;
+    -webkit-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    -moz-box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+    box-shadow: 9px 7px 5px rgba(50, 50, 50, 0.77);
+}
+
+.btnfaq,
+.respostafaq {
+    font-family: 'Poppins', sans-serif;
+}
+
+.btnfaq {
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px 0;
+}
+
+.respostafaq {
+    position: relative;
+    font-size: 17px;
+    text-align: justify;
+    line-height: 20px;
+    height: 0;
+    overflow: hidden;
+    color: whitesmoke;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: 1px solid black;
+    height: 128px;
+}
+
+.footer-wrapper {
+    width: 75%;
+}
+
+footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+footer ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+.social-media {
+    margin-left: 1em;
+    border-radius: 20%;
+}

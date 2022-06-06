@@ -1,1 +1,1 @@
-# Senacoin
+# Senacoin mudanças do faq
